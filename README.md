@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://lighthappy.tk)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://lighthappy.tk) -->
 
 Etherum Solidity Web3 CI/CD AWS Boilerplate with LightHappy Memory NFT application to store our memory events in Etherum Network.
 
@@ -91,8 +91,8 @@ Etherum Solidity Web3 CI/CD AWS Boilerplate with LightHappy Memory NFT applicati
 
 ### Built With
 
-* [![Solidity][Solidity]][Solidity-url]
 * [![React][React.js]][React-url]
+* [![Solidity][Solidity]][Solidity-url]
 * [![Web3][Web3]][Web3-url]
 * [![AWS][AWS]][AWS-url]
 
@@ -109,15 +109,22 @@ Install nodejs <a> https://nodejs.org/en/download/ </a> <br/>
 Install npm <a> https://docs.npmjs.com/downloading-and-installing-node-js-and-npm </a>
 
 ### Installation
+```
+git clone https://github.com/hoan-pham-duy/etherum-solidity-web3-ci-cd-aws-boilerplate.git
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+# terminal 1
+npx hardhat node
 
-1. Install and configure Amplify CLI at <a> https://docs.amplify.aws/cli/start/install/ </a> 
-2. Install application outside Amplfiy.
+# terminal 2
+npx hardhat compile
+npx hardhat run scripts/sample-script.js --network localhost
 
+# terminal 3 
+npm run dev
+```
 
+Update the deployed contract address in `./src/compoonents/Home.js`
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Click to the projects we want to use in "My Projects" in <a> https://lighthappy.tk </a>
@@ -177,7 +184,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Pham Duy Hoan - [@hoan.pham.duy.1](https://fb.com/hoan.pham.duy.1) - phamduyhoan95@gmail.com
 
-Project Link: [https://github.com/hoan-pham-duy/lighthappy_tk_aws_amlify](https://github.com/hoan-pham-duy/lighthappy_tk_aws_amlify)
+Project Link: [https://github.com/hoan-pham-duy/lighthappy_tk_aws_amlify](https://github.com/hoan-pham-duy/etherum-solidity-web3-ci-cd-aws-boilerplate.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,8 +218,14 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-url]: https://www.linkedin.com/in/pham-duy-hoan-10a68b13a/ 
 [product-screenshot]: images/lighthappy_project.png
 
+[Solidity]: https://img.shields.io/badge/Solidity-FFB266?style=for-the-badge&logoColor=FFB266
+[Solidity-url]: https://docs.soliditylang.org/en/v0.8.17/
+
+[Web3]: https://img.shields.io/badge/Web3-FFB266?style=for-the-badge&logoColor=FFB266
+[Web3-url]: https://ethereum.org/en/web3/ 
+
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 
-[AWSAmplify]: https://img.shields.io/badge/AWS-Amplify-FFB266?style=for-the-badge&logoColor=FFB266
-[AWSAmplify-url]: https://aws.amazon.com/amplify/
+[AWS]: https://img.shields.io/badge/AWS-FFB266?style=for-the-badge&logoColor=FFB266
+[AWS-url]: https://aws.amazon.com/
