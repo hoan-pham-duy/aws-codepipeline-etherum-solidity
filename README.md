@@ -92,6 +92,7 @@ Etherum Solidity Web3 CI/CD AWS Boilerplate with LightHappy Memory NFT applicati
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![Etherum][Etherum]][Etherum-url]
 * [![Solidity][Solidity]][Solidity-url]
 * [![Web3][Web3]][Web3-url]
 * [![AWS][AWS]][AWS-url]
@@ -217,6 +218,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pham-duy-hoan-10a68b13a/ 
 [product-screenshot]: images/lighthappy_project.png
+
+[Etherum]: https://img.shields.io/badge/Etherum-FFB266?style=for-the-badge&logoColor=FFB266
+[Etherum-url]: https://ethereum.org/
 
 [Solidity]: https://img.shields.io/badge/Solidity-FFB266?style=for-the-badge&logoColor=FFB266
 [Solidity-url]: https://docs.soliditylang.org/en/v0.8.17/
