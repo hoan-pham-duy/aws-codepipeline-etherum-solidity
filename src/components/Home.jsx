@@ -1,11 +1,14 @@
+// import process from 'process';
+
 import WalletBalance from './WalletBalance';
 import { useEffect, useState } from 'react';
 
 import { ethers } from 'ethers';
 import FiredGuys from '../artifacts/contracts/MyNFT.sol/FiredGuys.json';
 
-const contractAddress = process.env.CONTRACT_ADDR;
-
+const contractAddress = import.meta.env.VITE_CONTRACT_ADDR;
+console.log('contractAddress = ', contractAddress);
+// const contractAddress = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0';
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 // get the end user

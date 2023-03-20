@@ -18,8 +18,8 @@ async function main() {
   const firedGuys = await FiredGuys.deploy();
 
   await firedGuys.deployed();
-
-  console.log("CONTRACT_ADDR=", firedGuys.address);
+  const envContractAddress = "VITE_CONTRACT_ADDR=" + firedGuys.address;
+  console.log(envContractAddress);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
