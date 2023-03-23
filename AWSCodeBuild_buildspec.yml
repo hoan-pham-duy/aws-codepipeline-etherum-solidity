@@ -14,5 +14,5 @@ phases:
       - mv .env.local dist/ 
 artifacts:
   files:
-    - 'dist/*'
+    - dist/*
   base-directory: 'src/artifacts'
