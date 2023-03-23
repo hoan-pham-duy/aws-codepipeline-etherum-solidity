@@ -9,8 +9,10 @@ phases:
       - |
         npx hardhat node &
         npx hardhat compile
-        npx hardhat run scripts/sample-script.js --network localhost >> .env
+        npx hardhat run scripts/sample-script.js --network localhost >> .env.local
+      - npm run build
+      - mv .env.local dist/ 
 artifacts:
   files:
-    - '**/*'
+    - 'dist/*'
   base-directory: 'src/artifacts'
