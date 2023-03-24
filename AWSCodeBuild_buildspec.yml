@@ -12,7 +12,9 @@ phases:
         npx hardhat run scripts/sample-script.js --network localhost >> .env.local
       - npm run build
       - mv .env.local dist/
-      - ls -la 
+      - ls -la
+      - cd dist
+      - ls -la
 artifacts:
   files:
     - dist/*
