@@ -17,5 +17,5 @@ phases:
       - ls -la
 artifacts:
   files:
-    - dist/*
+    - ./dist/**
   base-directory: 'src/artifacts'
