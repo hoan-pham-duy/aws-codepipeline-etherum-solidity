@@ -9,6 +9,7 @@ phases:
       - npx hardhat compile
       - npx hardhat run scripts/sample-script.js --network sepolia >> .env.local
       - npm run build
+      - cat .env.local
       - mv .env.local dist/
       - cp -r src/artifacts dist/
       - ls -la
