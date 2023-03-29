@@ -12,8 +12,6 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 const API_URL = process.env.API_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-console.log(`API_URL= ${API_URL}`);
-console.log(`PRIVATE_KEY= ${PRIVATE_KEY}`);
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
