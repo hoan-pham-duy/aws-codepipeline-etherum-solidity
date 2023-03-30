@@ -1,10 +1,10 @@
 import Install from './components/Install';
-import Home from './components/Home';
+import LhMemoriesComp from './components/LhMemories';
 
 function App() {
 
   if (window.ethereum) {
-    return <Home />;
+    return <LhMemoriesComp />;
   } else {
     return <Install />
   }
