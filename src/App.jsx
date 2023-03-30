@@ -1,3 +1,4 @@
+import FiredGuys from './components/FireGuys';
 import Install from './components/Install';
 import LhMemoriesComp from './components/LhMemories';
 

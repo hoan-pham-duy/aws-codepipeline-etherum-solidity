@@ -6,14 +6,14 @@ contract LhMemories{
     
     function payToPost(
         string memory memoryNft
-    ) public payable returns (string[] memory) {
+    ) public payable returns (uint256) {
         LhMemoriesMap[msg.sender].push(memoryNft);
-        return LhMemoriesMap[msg.sender];
+        return 1;
     }
 
     function getPostsSpecificAddr(
         address specificAddr
-    ) public payable returns (string[] memory) {
+    ) public view returns (string[] memory) {
        return LhMemoriesMap[specificAddr];
     }
 }
