@@ -52,7 +52,7 @@ function LhMemoriesComp() {
       <div class="input-group mb-3" style={{padding:"10px"}}>
         <input type="text" class="form-control" placeholder="Put Your Memory Here" aria-label="Your Memory" aria-describedby="basic-addon2" />
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary btn-navy" type="button">Submit</button>
+          <button class="btn btn-outline-secondary btn-navy" type="button" onClick={submitPost}>Submit</button>
         </div>
       </div>
 
