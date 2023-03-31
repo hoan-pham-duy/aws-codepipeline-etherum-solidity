@@ -50,7 +50,7 @@ function LhMemoriesComp() {
       <h1 className='text-center lh-memories-title'>LH Memories: Save your memories in Blockchain</h1>
       <WalletBalance />
       <div class="input-group mb-3" style={{padding:"10px"}}>
-        <input type="text" class="form-control" placeholder="Put Your Memory Here" aria-label="Your Memory" aria-describedby="basic-addon2" />
+        <input type="text" class="form-control" placeholder="Put Your Memory Here" aria-label="Your Memory" aria-describedby="basic-addon2" onChange={onInputChange}/>
         <div class="input-group-append">
           <button class="btn btn-outline-secondary btn-navy" type="button" onClick={submitPost}>Submit</button>
         </div>
