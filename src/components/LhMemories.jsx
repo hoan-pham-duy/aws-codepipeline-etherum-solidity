@@ -1,10 +1,12 @@
 // import process from 'process';
-
-import WalletBalance from './WalletBalance';
 import { useEffect, useState } from 'react';
 
+import WalletBalance from './WalletBalance';
 import { ethers, utils } from 'ethers';
 // import web3_eth_abi from "web3-eth-abi";
+
+import './LhMemories.css'
+
 import LhMemories from '../artifacts/contracts/LhMemories.sol/LhMemories.json';
 
 const contractAddress = import.meta.env.VITE_LH_MEMORIES_CONTRACT_ADDR;
