@@ -7,7 +7,8 @@ phases:
   build:
     commands:
       - npx hardhat compile
-      - npx hardhat run scripts/sample-script.js --network sepolia >> .env.local
+      - npx hardhat run scripts/fire_guys.js --network sepolia >> .env.local
+      - npx hardhat run scripts/lh_memories.js --network sepolia >> .env.local
       - npm run build
       - cat .env.local
       - mv .env.local dist/

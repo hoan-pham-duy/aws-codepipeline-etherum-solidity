@@ -12,21 +12,26 @@ async function main() {
   // If this script is run directly using `node` you may want to call compile
   // manually to make sure everything is compiled
   // await hre.run('compile');
-  const [deployer] = await ethers.getSigners();
-
-  // console.log("Deploying contracts with the account:", deployer.address);
-
-  // console.log("Account balance:", (await deployer.getBalance()).toString());
-  
-  // We get the contract to deploy
-  const FiredGuys = await hre.ethers.getContractFactory("FiredGuys");
-  const firedGuys = await FiredGuys.deploy();
-
-  await firedGuys.deployed();
-  const envContractAddress = "VITE_CONTRACT_ADDR=" + firedGuys.address;
+  let contractAddress = undefined
+  if (process.env.IS_USE_NEW_CONTRACT_FIRED_GUYS === 'TRUE') {
+    const [deployer] = await ethers.getSigners();
+    // We get the contract to deploy
+    const FiredGuys = await hre.ethers.getContractFactory("FiredGuys");
+    const firedGuys = await FiredGuys.deploy();
+    
+    await firedGuys.deployed();
+    contractAddress = firedGuys.address
+  } else {
+    contractAddress = process.env.STATIC_CONTRACT_FIRED_GUYS_ADDRESS
+  }
+  if (contractAddress === undefined)
+  {
+    console.log("CONTRACT_ADDRESS is not defined");
+    process.exit(1);
+  }
+  const envContractAddress = "VITE_FIRE_GUYS_CONTRACT_ADDR=" + contractAddress;
   console.log(envContractAddress);
 }
-
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main()
