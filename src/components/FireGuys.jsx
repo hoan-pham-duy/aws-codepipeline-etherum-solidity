@@ -8,7 +8,7 @@ import FiredGuys from '../artifacts/contracts/MyNFT.sol/FiredGuys.json';
 
 const contractAddress = import.meta.env.VITE_FIRE_GUYS_CONTRACT_ADDR;
 // Contract FireGuys is deployed in Sepolia network with address: 0xC7a3453Ea0507caFa293675bA79Ff9C3BD63F997
-console.log('contractAddress = ', contractAddress);
+console.log('FireGuys contractAddress = ', contractAddress);
 // const contractAddress = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0';
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 

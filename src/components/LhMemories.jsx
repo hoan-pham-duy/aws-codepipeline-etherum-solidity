@@ -8,7 +8,7 @@ import { ethers, utils } from 'ethers';
 import LhMemories from '../artifacts/contracts/LhMemories.sol/LhMemories.json';
 
 const contractAddress = import.meta.env.VITE_LH_MEMORIES_CONTRACT_ADDR;
-console.log('contractAddress = ', contractAddress);
+console.log('LH Memories contractAddress = ', contractAddress);
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 // get the end user
 const signer = provider.getSigner();
