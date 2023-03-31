@@ -23,6 +23,7 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.3",
+    "tailwindcss": "^3.3.1",
     "vite": "^2.9.15"
   }
 }

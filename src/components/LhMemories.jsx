@@ -47,15 +47,19 @@ function LhMemoriesComp() {
 
   return (
     <div>
+      <h1 className='text-center lh-memories-title'>LH Memories: Save your memories in Blockchain</h1>
       <WalletBalance />
-      <input type="text" placeholder='Your Post Here' onChange={onInputChange} />
-      <button onClick={submitPost}>Submit Post </button>
+      <div class="input-group mb-3" style={{padding:"10px"}}>
+        <input type="text" class="form-control" placeholder="Put Your Memory Here" aria-label="Your Memory" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary btn-navy" type="button">Submit</button>
+        </div>
+      </div>
 
-      <h1>Owner LH Memories</h1>
       <div className="container">
         <div className="row">
-            <h3> Owner Memories Here </h3>
-            <button onClick={getOwnerPosts}> Get OwnerPost </button>
+            <h3 className='text-center lh-memories-title'> Owner Memories Here </h3>
+            <button onClick={getOwnerPosts} class="btn btn-navy"> Get Owner Posts </button>
             <div>
             {
             ownerMemories.map(function (memory){
