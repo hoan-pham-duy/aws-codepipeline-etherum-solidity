@@ -56,10 +56,10 @@ function LhMemoriesComp() {
         </div>
       </div>
 
-      <div className="container">
+      <div style={{backgroundColor:"#f3f3f3"}}>
         <div className="row">
-            <h3 className='text-center lh-memories-title'> Owner Memories Here </h3>
-            <button onClick={getOwnerPosts} class="btn btn-navy"> Get Owner Posts </button>
+            <h3 className='text-center lh-memories-title'> Your Memories Here </h3>
+            <button onClick={getOwnerPosts} class="btn btn-navy"> Refresh Owner Posts </button>
             <div>
             {
             ownerMemories.map(function (memory){
